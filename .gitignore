@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+computer_vision_files/captured_board.jpg
+computer_vision_files/moves_pictures/

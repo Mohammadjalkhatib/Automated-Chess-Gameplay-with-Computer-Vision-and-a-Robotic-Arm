@@ -1,0 +1,6 @@
+ultralytics==8.0.196
+numpy
+pandas
+python-chess
+stockfish
+opencv-python

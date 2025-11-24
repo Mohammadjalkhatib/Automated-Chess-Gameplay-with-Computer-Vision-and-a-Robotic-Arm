@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./Computer Vision files",
+        "./Robot controller"
+    ]
+}
