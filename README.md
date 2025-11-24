@@ -9,6 +9,17 @@ This project integrates Computer Vision (YOLOv8), a Chess Engine (Stockfish), an
 3.  **Move Calculation**: Stockfish analyzes the FEN string to determine the best next move.
 4.  **Robot Control**: The best move (e.g., "e2e4") is translated into physical coordinates (pick and place points) using a mapping CSV. These coordinates are formatted as waypoints for a Simulink model to control the robotic arm.
 
+## 🧠 Chess Engine Details
+
+The project uses **Stockfish**, a powerful open-source chess engine.
+
+*   **Version**: Stockfish (Windows x86-64 AVX2 build)
+*   **Location**: `Stockfish engine/stockfish-windows-x86-64-avx2/stockfish/stockfish-windows-x86-64-avx2.exe`
+*   **Input**: A **FEN (Forsyth-Edwards Notation)** string representing the current board state.
+    *   *Example*: `rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1`
+*   **Output**: The **Best Move** in UCI (Universal Chess Interface) format.
+    *   *Example*: `e2e4` (Move piece from e2 to e4)
+
 ## 🛠️ Prerequisites
 
 ### Hardware
