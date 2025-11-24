@@ -28,7 +28,7 @@ def capture_image(move_number: int = 1) -> str:
     cap = cv2.VideoCapture(0)
     
     if not cap.isOpened():
-        print("  -> 🚨 Error: Could not open camera.")
+        print("  -> Error: Could not open camera.")
         return None
         
     # Read a frame
@@ -38,7 +38,7 @@ def capture_image(move_number: int = 1) -> str:
     cap.release()
     
     if not ret:
-        print("  -> 🚨 Error: Failed to capture frame.")
+        print("  -> Error: Failed to capture frame.")
         return None
         
     # Ensure the directory exists
@@ -65,7 +65,7 @@ def main():
     stockfish_path = "Stockfish engine/stockfish-windows-x86-64-avx2/stockfish/stockfish-windows-x86-64-avx2.exe"
 
     if not os.path.exists(model_path):
-        print(f"Error: YOLOv8 model not found at '{model_path}'")
+        print(f"  -> Error: YOLOv8 model not found at '{model_path}'.")
         return
 
     # --- Initialize Game State ---
@@ -104,7 +104,7 @@ def main():
 
         # === STEP 4: GET BEST MOVE FROM STOCKFISH ===
         if 'k' not in fen_string or 'K' not in fen_string:
-            print(f"  -> ⚠️ Warning: FEN string '{fen_string}' is missing kings. Skipping Stockfish analysis.")
+            print(f"  -> Warning: FEN string '{fen_string}' is missing kings. Skipping Stockfish analysis.")
             print("  -> Possible causes: Camera captured an empty board, or model failed to detect pieces.")
             break
 
@@ -136,7 +136,7 @@ def main():
             break
 
         # --- FOR NOW, WE'LL ONLY RUN ONE TURN ---
-        print("\n✅ Single turn simulation completed successfully.")
+        print("\nSingle turn simulation completed successfully.")
         break
 
         # In a full game, you would update the game state here:

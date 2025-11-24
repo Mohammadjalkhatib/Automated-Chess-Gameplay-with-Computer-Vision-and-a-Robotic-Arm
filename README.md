@@ -3,7 +3,7 @@
 ## 1. Project Overview
 This project implements a fully autonomous chess-playing system that integrates computer vision, artificial intelligence, and robotics. The system perceives the physical board state, calculates optimal moves using a chess engine, and physically executes those moves using a robotic manipulator. It bridges the gap between digital chess logic and physical interaction.
 
-## 2. ⚠️ Replication Requirements
+## 2. Replication Requirements
 To recreate the results of this study and ensure the system functions correctly, the following specific setup is required:
 
 *   **Chess Set:** You must use the exact same chess pieces as used in the study.
