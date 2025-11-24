@@ -52,7 +52,7 @@ The system is built on a modular architecture consisting of three core component
 
 ## 7. Datasets & Resources
 * **Dataset:** The "Chess TopView Dataset" used for training is available via Roboflow/Universe.
-* **Model:** The fine-tuned YOLOv8 model is available on Hugging Face (`Mohammadjalkhatib/chess_yolo`).
+*   **Model:** The fine-tuned YOLOv8 model is available on Hugging Face: [Mohammadjalkhatib/chess_yolo](https://huggingface.co/Mohammadjalkhatib/chess_yolo).
 
 ## 8. Project Flow
 
