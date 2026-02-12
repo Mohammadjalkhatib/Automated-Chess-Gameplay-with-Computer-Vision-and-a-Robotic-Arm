@@ -136,3 +136,28 @@ The script will:
     *   `Placement of pieces_csv.csv`: Mapping of board squares to physical coordinates.
 *   `Trained model/`: Contains the YOLOv8 model (`best.pt`).
 *   `Stockfish engine/`: Contains the Stockfish executable.
+
+## 📖 Citation
+
+If you use this work in your research, please cite:
+
+> M. AlKhatib, F. Jubair, M. Al Mashagbeh, M. Khaleel, and S. Rahamneh,  
+> “Automated Chess Gameplay With Computer Vision and A Robotic Arm,”  
+> *Engineering Reports*, vol. 8, no. 2, 2026, e70607.  
+> https://doi.org/10.1002/eng2.70607
+
+
+### BibTeX
+
+```bibtex
+@article{AlKhatib2026,
+  author  = {AlKhatib, Mohammad and Jubair, Fahd and Al Mashagbeh, Mohammad and Khaleel, Mohammad and Rahamneh, S.},
+  title   = {Automated Chess Gameplay With Computer Vision and A Robotic Arm},
+  journal = {Engineering Reports},
+  volume  = {8},
+  number  = {2},
+  year    = {2026},
+  pages   = {e70607},
+  doi     = {10.1002/eng2.70607}
+}
+
